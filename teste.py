@@ -12,7 +12,7 @@ senha_conexos = '25434472v'
 # define o caminho para o driver do Chrome
 driver = webdriver.Chrome()
 
-driver.get('https://capital.conexos.cloud/imp021')
+driver.get('')
 
 wait = WebDriverWait(driver,20)
 
