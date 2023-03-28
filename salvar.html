@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+
+  <style>
+
+
+  
+</style>
+ </head>
+   <body>
+     <div class="menu">
+<ul>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Conteudo</a></li>
+   
+</ul>
+
+     </div>
+     <form>
+     <select placeholder="Activity ID" name="activity_id">
+      <option value="freight_vehicle-vehicle_type-hgv_refrig-fuel_source_diesel-vehicle_weight_na-percentage_load_100">freight</option>
+     </select> <br>
+     <select name="weight_unit"> <option value="kg">KG</option>
+     </select>
+     <select name="distance_unit"> 
+    <option value ="km">KM</option>
+     </select><br>
+     
+     <input id="distanciainput" name="distanciainput" value="" type="text" placeholder="Distancia">
+     <input id="pesoinput" name="pesoinput" value="" type="text" placeholder="Peso">       
+     
+   
+     <button onclick="enviar()">Confirmar</button>
+     </form>  
+</body>
+   
+   <script type="text/javascript">
+    function enviar(){
+     
+        var pesoinput = document.getElementById("pesoinput").value;
+        var upesoinput = document.getElementById("upesoinput").value;
+        var distanciainput = document.getElementById("distanciainput").value;
+        var udistanciainput = document.getElementById("udistanciainput").value;
+      
+        alert("Você digitou: " + pesoinput + "  " + upesoinput + "   " + distanciainput + " " + udistanciainput);
+    }
+   </script>
+
+
+</html>
